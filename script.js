@@ -30,10 +30,8 @@ function removeTransition(e) {
 }
 
 /* Select all keys on the page and store them in keys */
-// ... except nothing is getting stored, wtf
 const keys = document.querySelectorAll('.key');
-// check to see if anything is in keys
-// console.log(keys.length);
+
 /* You can't add an eventListener to an array: you have to listen to each
   element individually. */
 /*
