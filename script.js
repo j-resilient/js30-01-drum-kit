@@ -26,14 +26,14 @@ window.addEventListener('keydown', function (e) {
 function removeTransition(e) {
   // if it's not a transform, skip it
   if(e.propertyName !== 'transform') return;
-  console.log("hello");
   this.classList.remove('playing');
 }
 
 /* Select all keys on the page and store them in keys */
 // ... except nothing is getting stored, wtf
 const keys = document.querySelectorAll('.key');
-console.log(keys.length);
+// check to see if anything is in keys
+// console.log(keys.length);
 /* You can't add an eventListener to an array: you have to listen to each
   element individually. */
 /*
